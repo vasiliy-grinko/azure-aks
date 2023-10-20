@@ -23,6 +23,7 @@ variable "username" {
 }
 
 variable "public_key" {
-    default = ${file("~/.ssh/id_rsa.pub")}
+    default = ""
+    # or use ${file("~/.ssh/id_rsa.pub")} instead of this variable.
 }
 
